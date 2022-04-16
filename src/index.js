@@ -31,7 +31,7 @@ function renderClock() {
     const dtDate = DateTime.now()
       .setZone(ci.timeZone)
       .toFormat("dd MMMM, yyyy");
-    const dtTime = DateTime.now().setZone(ci.timeZone).toFormat("hh:mm:ss");
+    const dtTime = DateTime.now().setZone(ci.timeZone).toFormat("HH:mm:ss");
     // console.log(dtDate, dtTime);
 
     const html = `
