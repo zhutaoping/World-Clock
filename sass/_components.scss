@@ -1,0 +1,29 @@
+.clockZone {
+  width: 50%;
+  margin-top: 2rem;
+  // background-color: teal;
+  display: flex;
+  flex-direction: column;
+
+  &__grid {
+    padding: 1rem 3rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--city-date {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &--time {
+      // align-self: cneter;
+    }
+  }
+
+  &__grid + &__grid {
+    border-top: 0;
+  }
+}
