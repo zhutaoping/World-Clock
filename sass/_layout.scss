@@ -1,6 +1,10 @@
 .header {
   padding: 1rem 0;
-  width: 50%;
+  width: 95%;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
+
+  @include respond(big-desktop) {
+    max-width: 50%;
+  }
 }

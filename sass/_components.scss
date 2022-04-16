@@ -1,9 +1,13 @@
 .clockZone {
-  width: 50%;
+  width: 95%;
   margin-top: 2rem;
   // background-color: teal;
   display: flex;
   flex-direction: column;
+
+  @include respond(big-desktop) {
+    max-width: 50%;
+  }
 
   &__grid {
     padding: 1rem 3rem;
@@ -11,15 +15,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // gap: 50px;
 
     &--city-date {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      gap: 1rem;
     }
 
     &--time {
       // align-self: cneter;
+    }
+
+    &:nth-child(odd) {
+      color: white;
+      background-color: black;
     }
   }
 

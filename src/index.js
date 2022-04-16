@@ -1,21 +1,21 @@
 const { DateTime } = require("luxon");
 
 const cities = [
-  //   {
-  //     city: "LONDON",
-  //     timeZone: "Europe/London",
-  //   },
-  //   {
-  //     city: "BANGKOK",
-  //     timeZone: "Asia/Bangkok",
-  //   },
-  //   {
-  //     city: "SYDNEY",
-  //     timeZone: "Australia/Sydney",
-  //   },
   {
     city: "NEW YORK",
     timeZone: "America/New_York",
+  },
+  {
+    city: "LONDON",
+    timeZone: "Europe/London",
+  },
+  {
+    city: "TOKYO",
+    timeZone: "Asia/Tokyo",
+  },
+  {
+    city: "SYDNEY",
+    timeZone: "Australia/Sydney",
   },
   {
     city: "TAIPEI",
@@ -23,14 +23,6 @@ const cities = [
   },
 ];
 
-// console.log(DateTime.now().setZone("Europe/London").toFormat("dd MM, yyyy"));
-// console.log(DateTime.now().setZone("Europe/London").toFormat("hh:mm:ss"));
-
-// console.log(DateTime.now().toFormat("dd MM, yyyy"));
-// console.log(DateTime.now().toFormat("hh:mm:ss"));
-
-// const header = document.querySelector(".header");
-// const title = document.querySelector(".title");
 const clockZone = document.querySelector(".clockZone");
 
 function renderClock() {
@@ -55,5 +47,4 @@ function renderClock() {
     clockZone.insertAdjacentHTML("beforeend", html);
   });
 }
-renderClock();
-// setInterval(renderClock, 1000);
+setInterval(renderClock, 1000);
